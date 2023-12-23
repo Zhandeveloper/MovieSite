@@ -102,7 +102,7 @@ async function openModal(id) {
         <li class="modal__movie-genre">Жанр - ${respData.genres.map((el) => `<span>${el.genre}</span>`)}</li>
         ${respData.filmLength ? `<li class="modal__movie-runtime">Время - ${respData.filmLength} минут</li>` : ''}
         <li >Кинопоиск: <a class="modal__movie-site" href="${respData.webUrl}">${respData.webUrl}</a></li>
-        <li>Смотреть бесплтано:<a href="https://kinogo.biz/" target="_blank" class="kinogo">Kinogo</a></li>
+        <li>Смотреть бесплатно:<a href="https://kinogo.biz/" target="_blank" class="kinogo">Kinogo</a></li>
         <li class="modal__movie-overview">Описание - ${respData.description}</li>
       </ul>
       <button type="button" class="modal__button-close">Закрыть</button>
